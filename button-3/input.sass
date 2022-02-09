@@ -1,0 +1,79 @@
+$color-SkyBlue: #39b9CA
+$color-white: #FFFFFF
+$color-DarkBlue:#41387E
+$color-SteelBlue: #4682B4    
+    
+.btFale 
+    position: fixed
+    top: 280px
+    right: -60px
+    z-index: 20
+    // left:
+      
+.btFale button:focus 
+    outline: none
+
+.btFale button.main 
+    position: absolute
+    width: 160px
+    height: 50px
+    cursor: pointer
+    border: none
+    border-radius: 5px
+    background-color: $color-DarkBlue
+    right: 0
+    bottom: 0
+    z-index: 20
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4)
+    font-size: 24px
+    color: white
+    transform: rotate(-90deg)
+
+.btFale button.main:before 
+    content: "Fale conosco"
+
+.btFale div 
+    display: flex
+    justify-content: center
+    flex-direction: column
+    width: 200px
+    height: 160px
+    border-radius: 5px
+    background-color: #000000
+    position: relative
+    bottom: -55px
+    z-index: 10
+    transition: 0.5s ease-in-out
+    box-shadow: 0 3px 8px  rgba(0, 0, 0, 2)
+    opacity: 0
+    a 
+        text-decoration: none
+        color: #FFFFFF
+        font-size: 20px
+        padding-left: 10px
+        padding-bottom: 10px
+
+.btFale.show button.main,
+.btFale.show button.main 
+    outline: none
+    background-color: $color-SteelBlue
+    box-shadow: 0 3px 8px  rgba(0, 0, 0, 2)
+
+.btFale.show button.main:before,
+.btFale.show button.main:before 
+    content: "Fale conosco"
+
+.btFale.show button.main + div,
+.btFale.show button.main + div 
+    bottom: -55px
+
+.btFale.show button.main + div,
+.btFale.show button.main + div 
+    margin-right: 100px
+    opacity: 0.5
+
+.btFale.show button.main + div,
+.btFale.show button.main + div 
+    opacity: 0.5
+    
+      

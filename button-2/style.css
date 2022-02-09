@@ -1,0 +1,80 @@
+.btFale {
+  position: fixed;
+  top: 180px;
+  right: -60;
+}
+
+.btFale button:focus {
+  outline: none;
+}
+
+.btFale button.main {
+  position: absolute;
+  width: 160px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #5b19b7;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  font-size: 24px;
+  color: white;
+  transform: rotate(-90deg);
+}
+
+.btFale button.main:before {
+  content: "Fale conosco";
+}
+
+.btFale div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  height: 160px;
+  border-radius: 5px;
+  background-color: aqua;
+  position: relative;
+  bottom: -55px;
+  z-index: 10;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+.btFale div a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.btFale.show button.main,
+.btFale.show button.main {
+  outline: none;
+  background-color: #7716ff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.btFale.show button.main:before,
+.btFale.show button.main:before {
+  content: "Fale conosco";
+}
+
+.btFale.show button.main + div,
+.btFale.show button.main + div {
+  bottom: -55px;
+}
+
+.btFale.show button.main + div,
+.btFale.show button.main + div {
+  margin-right: 100px;
+  opacity: 1;
+}
+
+.btFale.show button.main + div,
+.btFale.show button.main + div {
+  opacity: 1;
+}

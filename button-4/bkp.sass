@@ -1,0 +1,87 @@
+$color-SkyBlue: #39b9CA
+$color-white: #FFFFFF
+$color-DarkBlue:#41387E
+$color-SteelBlue: #4682B4   
+
+.btFale 
+    position: fixed
+    top: 350px
+    /* bottom: 20px */
+    right: -60
+    button 
+        cursor: pointer
+        width: 60px
+        height: 60px
+        border-radius: 5px
+        // background-color: #39b9CA
+        border: none
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4)
+        font-size: 17px
+        text-transform: uppercase
+        color: white
+        -webkit-transition: 0.2s ease-out
+        -moz-transition: 0.2s ease-out
+        transition: 0.2s ease-out
+        img
+            max-width: 50px
+            max-height: 50px 
+    button:focus 
+        outline: none
+    button.main 
+        position: absolute
+        width: 150px
+        height: 52px
+        border-radius: 5px
+        background-color: $color-SkyBlue
+        right: 0
+        bottom: 0
+        z-index: 20
+        transform: rotate(-90deg)
+    button.main:before 
+        content: "Fale conosco"
+    ul 
+        position: absolute
+        bottom: 0
+        right: 0
+        padding: 0
+        padding-right: 5px
+        margin: 0
+        list-style: none
+        z-index: 10
+        bottom: -50px
+        -webkit-transition: 0.2s ease-out
+        -moz-transition: 0.2s ease-out
+        transition: 0.2s ease-out
+        li 
+            display: flex
+            justify-content: flex-start
+            position: relative
+            margin-bottom: 10px
+            opacity: 0
+            -webkit-transition: 0.3s ease-out
+            -moz-transition: 0.3s ease-out
+            transition: 0.3s ease-out
+
+.btFale.show button.main,
+.btFale.show button.main 
+    outline: none
+    background-color: $color-DarkBlue
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5)
+
+.btFale.show button.main:before,
+.btFale.show button.main:before 
+    content: "Fale conosco"
+
+.btFale.show button.main + ul,
+.btFale.show button.main + ul 
+    bottom: -48px
+
+.btFale.show button.main + ul li,
+.btFale.show button.main + ul li 
+    margin-right: 105px
+    opacity: 1
+
+.btFale.show button.main + ul li:hover,
+.btFale.show button.main + ul li:hover 
+    opacity: 1
+
